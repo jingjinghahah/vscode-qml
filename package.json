@@ -1,0 +1,44 @@
+{
+    "name": "vscode-qml",
+    "displayName": "vscode qml",
+    "description": "qq小程序qml扩展",
+    "publisher":"jingjing",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "qml",
+                "aliases": [
+                    "qml",
+                    "qml"
+                ],
+                "extensions": [
+                    ".qml"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "qml",
+                "scopeName": "text.html.qml",
+                "path": "./syntaxes/qml.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "qml",
+                "path": "./snippets/qml.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "vsce": "^1.74.0"
+    }
+}
